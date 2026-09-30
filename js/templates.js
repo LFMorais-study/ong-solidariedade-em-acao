@@ -5,7 +5,10 @@
 const projects = [
     {
         id: "educacao",
-        image: "../images/educacao.svg",
+        image: new URL(
+            "../images/educacao.svg",
+            import.meta.url
+        ).href,
         imageAlt: "Ilustracao representando educacao",
         category: "Educacao",
         categoryClass: "badge-primary",
@@ -19,7 +22,10 @@ const projects = [
     },
     {
         id: "alimentacao",
-        image: "../images/alimentacao.svg",
+        image: new URL(
+            "../images/alimentacao.svg",
+            import.meta.url
+        ).href,
         imageAlt: "Ilustracao representando apoio alimentar",
         category: "Alimentacao",
         categoryClass: "badge-secondary",
@@ -33,7 +39,10 @@ const projects = [
     },
     {
         id: "meio-ambiente",
-        image: "../images/meio-ambiente.svg",
+        image: new URL(
+            "../images/meio-ambiente.svg",
+            import.meta.url
+        ).href,
         imageAlt: "Ilustracao representando meio ambiente",
         category: "Meio ambiente",
         categoryClass: "badge-primary",
