@@ -1,10 +1,11 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    base: "./",
+    base: "/ong-solidariedade-em-acao/",
     appType: "mpa",
 
     input: {
+        raiz: "./index.html",
         inicio: "./html/index.html",
         projetos: "./html/projetos.html",
         voluntariado: "./html/voluntariado.html",
