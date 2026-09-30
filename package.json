@@ -1,0 +1,27 @@
+{
+  "name": "ong-solidariedade-em-acao",
+  "version": "1.0.0",
+  "description": "Projeto academico ficticio desenvolvido para praticar HTML, CSS e JavaScript com foco em interatividade e Single Page Application (SPA).",
+  "main": "index.js",
+  
+    "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LFMorais-study/ong-solidariedade-em-acao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LFMorais-study/ong-solidariedade-em-acao/issues"
+  },
+  "homepage": "https://github.com/LFMorais-study/ong-solidariedade-em-acao#readme",
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}
