@@ -75,7 +75,14 @@ function projectCardTemplate(project, variant) {
 
     return `
         <article class="project-card card-item" id="${project.id}">
-            <img src="${project.image}" alt="${project.imageAlt}">
+            <img
+                src="${project.image}"
+                alt="${project.imageAlt}"
+                width="800"
+                height="520"
+                loading="lazy"
+                decoding="async"
+            >
             <div class="card-body">
                 <div class="badge-row">
                     <span class="badge ${project.categoryClass}">${project.category}</span>
