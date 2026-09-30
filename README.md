@@ -2,6 +2,17 @@
 
 Projeto academico ficticio desenvolvido para praticar HTML, CSS e JavaScript com foco em interatividade e Single Page Application (SPA).
 
+
+Para executar o projeto localmente, primeiro é necessário clonar o repositório Git:
+
+`git clone https://github.com/LFMorais-study/ong-solidariedade-em-acao.git`
+
+Depois, acesse a pasta do projeto e abra-a no Visual Studio Code. Como a aplicação utiliza `fetch()` na navegação SPA, ela deve ser executada por um servidor HTTP local. Foi utilizada a extensão Live Server, iniciando a aplicação pelo arquivo `html/index.html`.
+
+O projeto não exige instalação de dependências por NPM, pois utiliza HTML, CSS e JavaScript nativos. A biblioteca SweetAlert2 é carregada externamente por CDN.
+
+O versionamento utiliza uma estratégia baseada em GitFlow. A branch `main` representa a versão estável, `develop` concentra as alterações integradas e branches `feature/*` são utilizadas para novas funcionalidades. Os commits seguem o padrão Conventional Commits, utilizando prefixos como `feat`, `fix`, `docs`, `refactor` e `chore`.
+
 ## Estrutura
 
 ```text
@@ -93,6 +104,32 @@ Importacao utilizada:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25"></script>
+
+
+
+
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript ES6+
+- ES Modules
+- localStorage
+- SweetAlert2
+- Git e GitHub
+
+## Requisitos
+
+- Navegador moderno
+- Servidor HTTP local
+- Visual Studio Code + Live Server (opcional)
+
+## Instalação e execução
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/LFMorais-study/ong-solidariedade-em-acao.git
 ```
 
 ## Modularizacao ES Modules
