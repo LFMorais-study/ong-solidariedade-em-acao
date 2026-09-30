@@ -6,7 +6,9 @@ import { clearFormState, updateFieldState, validateForm } from "./validation.js"
 import {
     clearFormDraft,
     registerSubmission,
-    saveFormDraft
+    saveFormDraft,
+    saveContrastMode,
+    getContrastMode
 } from "./storage.js";
 import { showToast } from "./notifications.js";
 
@@ -85,6 +87,18 @@ function bindStaticNavigationEvents() {
         const isOpen = dropdownToggle.getAttribute("aria-expanded") === "true";
         dropdownToggle.setAttribute("aria-expanded", String(!isOpen));
         dropdownMenu?.classList.toggle("active");
+    });
+
+    const contrastToggle = document.querySelector(
+        "[data-contrast-toggle]"
+    );
+
+    contrastToggle?.addEventListener("click", () => {
+        const enabled =
+            document.documentElement.dataset.contrast !== "high";
+
+        applyContrastMode(enabled);
+        saveContrastMode(enabled);
     });
 }
 
@@ -180,10 +194,45 @@ function bindDelegatedEvents() {
     });
 }
 
+function applyContrastMode(enabled) {
+    const button = document.querySelector(
+        "[data-contrast-toggle]"
+    );
+
+    if (enabled) {
+        document.documentElement.setAttribute(
+            "data-contrast",
+            "high"
+        );
+    } else {
+        document.documentElement.removeAttribute(
+            "data-contrast"
+        );
+    }
+
+    if (button) {
+        button.setAttribute(
+            "aria-pressed",
+            String(enabled)
+        );
+
+        button.setAttribute(
+            "aria-label",
+            enabled
+                ? "Desativar modo de alto contraste"
+                : "Ativar modo de alto contraste"
+        );
+
+        button.textContent = enabled
+            ? "Contraste padrão"
+            : "Alto contraste";
+    }
+}
+
 export function initInterfaceEvents() {
     if (initialized) return;
     initialized = true;
-
+    applyContrastMode(getContrastMode());
     bindStaticNavigationEvents();
     bindDelegatedEvents();
 }

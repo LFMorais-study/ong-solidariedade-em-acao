@@ -5,7 +5,8 @@
 const STORAGE_KEYS = {
     drafts: "ong-solidariedade:drafts",
     submissions: "ong-solidariedade:submissions",
-    lastRoute: "ong-solidariedade:last-route"
+    lastRoute: "ong-solidariedade:last-route",
+    contrastMode: "ong-solidariedade:contrast-mode"
 };
 
 function readJSON(key, fallback) {
@@ -123,5 +124,29 @@ export function getLastRoute() {
     } catch (error) {
         console.warn("Nao foi possivel recuperar a ultima rota.", error);
         return "#inicio";
+    }
+}
+
+export function saveContrastMode(enabled) {
+    try {
+        localStorage.setItem(
+            STORAGE_KEYS.contrastMode,
+            enabled ? "high" : "default"
+        );
+    } catch (error) {
+        console.warn(
+            "Não foi possível salvar o modo de contraste.",
+            error
+        );
+    }
+}
+
+export function getContrastMode() {
+    try {
+        return localStorage.getItem(
+            STORAGE_KEYS.contrastMode
+        ) === "high";
+    } catch (error) {
+        return false;
     }
 }

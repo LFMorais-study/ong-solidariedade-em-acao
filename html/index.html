@@ -1,279 +1,254 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ONG Solidariedade em Ação - plataforma fictícia para projetos sociais, voluntariado e doações.">
+    <meta name="description"
+        content="ONG Solidariedade em Ação - plataforma fictícia para projetos sociais, voluntariado e doações.">
     <title>ONG Solidariedade em Ação | Início</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body data-spa="true">
 
-<a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
 
-<header class="site-header">
-    <div class="container header-content">
-        <a href="#inicio" class="logo" aria-label="ONG Solidariedade em Ação - Página inicial">
-            <span class="logo-mark" aria-hidden="true">SA</span>
-            ONG Solidariedade em Ação
-        </a>
-
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Abrir menu de navegação"
-            aria-controls="main-menu"
-            aria-expanded="false"
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="main-nav" id="main-menu" aria-label="Navegação principal">
-            <ul class="nav-list">
-                <li><a href="#inicio">Início</a></li>
-
-                <li class="has-dropdown">
-                    <button
-                        class="dropdown-toggle"
-                        type="button"
-                        aria-expanded="false"
-                        aria-controls="projects-submenu"
-                    >
-                        Projetos
-                        <span class="dropdown-icon" aria-hidden="true">▼</span>
-                    </button>
-
-                    <ul class="dropdown-menu" id="projects-submenu">
-                        <li><a href="#projetos/educacao">Educação</a></li>
-                        <li><a href="#projetos/alimentacao">Alimentação</a></li>
-                        <li><a href="#projetos/meio-ambiente">Meio Ambiente</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#voluntariado">Seja voluntário</a></li>
-                <li><a href="#contato">Contato</a></li>
-
-                <li>
-                    <a href="#doacoes" class="btn btn-primary nav-donate">
-                        Quero ajudar
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
-<main id="conteudo" tabindex="-1">
-    <section class="hero">
-        <div class="container grid-12">
-            <div class="hero-content">
-                <span class="hero-kicker">Transformando realidades</span>
-                <h1>Pequenas ações geram grandes mudanças.</h1>
-                <p>
-                    A ONG Solidariedade em Ação conecta pessoas, projetos e recursos para ampliar
-                    oportunidades em educação, alimentação e sustentabilidade.
-                </p>
-
-                <div class="actions">
-                    <a href="#projetos" class="btn btn-primary">Conheça os projetos</a>
-                    <button
-                        type="button"
-                        class="btn btn-outline"
-                        data-modal-target="#support-modal"
-                    >
-                        Quero apoiar
-                    </button>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <img src="../images/hero.svg" alt="Ilustração de pessoas colaborando em uma ação social">
-            </div>
-        </div>
-    </section>
-
-    <section class="page-section alt">
-        <div class="container">
-            <div class="section-heading">
-                <span class="section-label">Nossos projetos</span>
-                <h2>Iniciativas que aproximam pessoas e oportunidades</h2>
-                <p>
-                    Cada frente de atuação possui objetivos claros e formas diferentes
-                    de participação.
-                </p>
-            </div>
-
-            <div class="grid-12" data-template="project-list" data-variant="home"></div>
-        </div>
-    </section>
-
-    <section class="page-section">
-        <div class="container">
-            <div class="section-heading">
-                <span class="section-label">Impacto</span>
-                <h2>Resultados que mostram a força da participação coletiva</h2>
-            </div>
-
-            <div class="stats" data-template="stats-list"></div>
-        </div>
-    </section>
-
-    <section class="page-section alt">
-        <div class="container grid-12">
-            <div class="main-content">
-                <div class="section-heading">
-                    <span class="section-label">Feedback visual</span>
-                    <h2>Mensagens claras para cada situação</h2>
-                    <p>
-                        Alertas e notificações ajudam o usuário a compreender o estado
-                        das ações realizadas na plataforma.
-                    </p>
-                </div>
-
-                <div class="feedback-demo">
-                    <div class="alert alert-success" role="status">
-                        <span class="alert-icon" aria-hidden="true">✓</span>
-                        <div class="alert-content">
-                            <strong class="alert-title">Cadastro realizado</strong>
-                            <p>Seus dados foram enviados com sucesso.</p>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-warning" role="alert">
-                        <span class="alert-icon" aria-hidden="true">⚠</span>
-                        <div class="alert-content">
-                            <strong class="alert-title">Atenção</strong>
-                            <p>Algumas vagas de voluntariado possuem disponibilidade limitada.</p>
-                        </div>
-                    </div>
-
-                    <div class="alert alert-info" role="status">
-                        <span class="alert-icon" aria-hidden="true">ℹ</span>
-                        <div class="alert-content">
-                            <strong class="alert-title">Informação</strong>
-                            <p>Novos projetos são adicionados regularmente à plataforma.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <aside class="sidebar">
-                <div class="highlight-box">
-                    <h3>Experimente o toast</h3>
-                    <p>
-                        Clique no botão para visualizar uma notificação não obstrutiva.
-                    </p>
-                    <button
-                        class="btn btn-secondary"
-                        type="button"
-                        onclick="showToast('Ação concluída!', 'Este é um exemplo de toast de sucesso.', 'success')"
-                    >
-                        Mostrar toast
-                    </button>
-                </div>
-            </aside>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <div class="container cta-content">
-            <div>
-                <h2>Quer participar?</h2>
-                <p>Existem várias formas de apoiar nossas iniciativas.</p>
-            </div>
-
-            <a href="#voluntariado" class="btn btn-secondary">Quero ser voluntário</a>
-        </div>
-    </section>
-</main>
-
-<div
-    class="modal"
-    id="support-modal"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="support-modal-title"
-    aria-hidden="true"
-    aria-describedby="support-modal-description"
->
-    <div class="modal-dialog">
-        <div class="modal-header">
-            <h2 class="modal-title" id="support-modal-title">Apoiar projeto</h2>
-
-            <button
-                type="button"
-                class="modal-close"
-                data-modal-close
-                aria-label="Fechar janela"
-            >
-                ×
-            </button>
-        </div>
-
-        <div class="modal-body">
-            <span class="badge badge-success">Participação voluntária</span>
-            <p id="support-modal-description">
-                Obrigado pelo interesse em apoiar nossas iniciativas.
-            </p>
-            <p>
-                Você pode seguir para o formulário de voluntariado ou conhecer
-                as opções de contribuição disponíveis.
-            </p>
-        </div>
-
-        <div class="modal-footer">
-            <button type="button" class="btn btn-outline" data-modal-close>
-                Cancelar
-            </button>
-            <a href="#voluntariado" class="btn btn-primary">
-                Continuar
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#inicio" class="logo" aria-label="ONG Solidariedade em Ação - Página inicial">
+                <span class="logo-mark" aria-hidden="true">SA</span>
+                ONG Solidariedade em Ação
             </a>
+
+            <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="main-menu"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="main-menu" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Início</a></li>
+
+                    <li class="has-dropdown">
+                        <button class="dropdown-toggle" type="button" aria-expanded="false"
+                            aria-controls="projects-submenu">
+                            Projetos
+                            <span class="dropdown-icon" aria-hidden="true">▼</span>
+                        </button>
+
+                        <ul class="dropdown-menu" id="projects-submenu">
+                            <li><a href="#projetos/educacao">Educação</a></li>
+                            <li><a href="#projetos/alimentacao">Alimentação</a></li>
+                            <li><a href="#projetos/meio-ambiente">Meio Ambiente</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#voluntariado">Seja voluntário</a></li>
+                    <li><a href="#contato">Contato</a></li>
+
+                    <li>
+                        <a href="#doacoes" class="btn btn-primary nav-donate">
+                            Quero ajudar
+                        </a>
+                    </li>
+                    <button class="contrast-toggle" type="button" data-contrast-toggle aria-pressed="false"
+                        aria-label="Ativar modo de alto contraste">
+                        Alto contraste
+                    </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="conteudo" tabindex="-1">
+        <section class="hero">
+            <div class="container grid-12">
+                <div class="hero-content">
+                    <span class="hero-kicker">Transformando realidades</span>
+                    <h1>Pequenas ações geram grandes mudanças.</h1>
+                    <p>
+                        A ONG Solidariedade em Ação conecta pessoas, projetos e recursos para ampliar
+                        oportunidades em educação, alimentação e sustentabilidade.
+                    </p>
+
+                    <div class="actions">
+                        <a href="#projetos" class="btn btn-primary">Conheça os projetos</a>
+                        <button type="button" class="btn btn-outline" data-modal-target="#support-modal">
+                            Quero apoiar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="../images/hero.svg" alt="Ilustração de pessoas colaborando em uma ação social">
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section alt">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">Nossos projetos</span>
+                    <h2>Iniciativas que aproximam pessoas e oportunidades</h2>
+                    <p>
+                        Cada frente de atuação possui objetivos claros e formas diferentes
+                        de participação.
+                    </p>
+                </div>
+
+                <div class="grid-12" data-template="project-list" data-variant="home"></div>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">Impacto</span>
+                    <h2>Resultados que mostram a força da participação coletiva</h2>
+                </div>
+
+                <div class="stats" data-template="stats-list"></div>
+            </div>
+        </section>
+
+        <section class="page-section alt">
+            <div class="container grid-12">
+                <div class="main-content">
+                    <div class="section-heading">
+                        <span class="section-label">Feedback visual</span>
+                        <h2>Mensagens claras para cada situação</h2>
+                        <p>
+                            Alertas e notificações ajudam o usuário a compreender o estado
+                            das ações realizadas na plataforma.
+                        </p>
+                    </div>
+
+                    <div class="feedback-demo">
+                        <div class="alert alert-success" role="status">
+                            <span class="alert-icon" aria-hidden="true">✓</span>
+                            <div class="alert-content">
+                                <strong class="alert-title">Cadastro realizado</strong>
+                                <p>Seus dados foram enviados com sucesso.</p>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning" role="alert">
+                            <span class="alert-icon" aria-hidden="true">⚠</span>
+                            <div class="alert-content">
+                                <strong class="alert-title">Atenção</strong>
+                                <p>Algumas vagas de voluntariado possuem disponibilidade limitada.</p>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info" role="status">
+                            <span class="alert-icon" aria-hidden="true">ℹ</span>
+                            <div class="alert-content">
+                                <strong class="alert-title">Informação</strong>
+                                <p>Novos projetos são adicionados regularmente à plataforma.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="highlight-box">
+                        <h3>Experimente o toast</h3>
+                        <p>
+                            Clique no botão para visualizar uma notificação não obstrutiva.
+                        </p>
+                        <button class="btn btn-secondary" type="button"
+                            onclick="showToast('Ação concluída!', 'Este é um exemplo de toast de sucesso.', 'success')">
+                            Mostrar toast
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container cta-content">
+                <div>
+                    <h2>Quer participar?</h2>
+                    <p>Existem várias formas de apoiar nossas iniciativas.</p>
+                </div>
+
+                <a href="#voluntariado" class="btn btn-secondary">Quero ser voluntário</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="support-modal" role="dialog" aria-modal="true" aria-labelledby="support-modal-title"
+        aria-hidden="true" aria-describedby="support-modal-description">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2 class="modal-title" id="support-modal-title">Apoiar projeto</h2>
+
+                <button type="button" class="modal-close" data-modal-close aria-label="Fechar janela">
+                    ×
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <span class="badge badge-success">Participação voluntária</span>
+                <p id="support-modal-description">
+                    Obrigado pelo interesse em apoiar nossas iniciativas.
+                </p>
+                <p>
+                    Você pode seguir para o formulário de voluntariado ou conhecer
+                    as opções de contribuição disponíveis.
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline" data-modal-close>
+                    Cancelar
+                </button>
+                <a href="#voluntariado" class="btn btn-primary">
+                    Continuar
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
 
-<footer class="site-footer">
-    <div class="container footer-content">
-        <div class="footer-column">
-            <h3>ONG Solidariedade em Ação</h3>
-            <p>
-                Projeto acadêmico fictício desenvolvido para demonstrar
-                boas práticas de HTML, CSS responsivo e JavaScript.
-            </p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>ONG Solidariedade em Ação</h3>
+                <p>
+                    Projeto acadêmico fictício desenvolvido para demonstrar
+                    boas práticas de HTML, CSS responsivo e JavaScript.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <a href="#projetos">Projetos</a>
+                <a href="#voluntariado">Voluntariado</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p>contato@solidariedadeemacao.org</p>
+                <p>(00) 3333-4444</p>
+            </div>
         </div>
+    </footer>
 
-        <div class="footer-column">
-            <h3>Navegação</h3>
-            <a href="#projetos">Projetos</a>
-            <a href="#voluntariado">Voluntariado</a>
-            <a href="#contato">Contato</a>
-        </div>
+    <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
 
-        <div class="footer-column">
-            <h3>Contato</h3>
-            <p>contato@solidariedadeemacao.org</p>
-            <p>(00) 3333-4444</p>
-        </div>
-    </div>
-</footer>
-
-<div
-    class="toast-container"
-    id="toast-container"
-    aria-live="polite"
-    aria-atomic="true"
-></div>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25"></script>
-<script type="module" src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25"></script>
+    <script type="module" src="../js/main.js"></script>
 
 
 
 
 
 </body>
+
 </html>
