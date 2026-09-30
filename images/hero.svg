@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <rect width="800" height="520" rx="30" fill="#dcfce7"/>
+  <circle cx="620" cy="110" r="70" fill="#fef3c7"/>
+  <rect x="95" y="300" width="610" height="110" rx="26" fill="#166534"/>
+  <circle cx="210" cy="210" r="62" fill="#f59e0b"/>
+  <circle cx="400" cy="170" r="68" fill="#14532d"/>
+  <circle cx="575" cy="225" r="58" fill="#0369a1"/>
+  <rect x="155" y="270" width="110" height="130" rx="40" fill="#b45309"/>
+  <rect x="340" y="240" width="120" height="170" rx="45" fill="#166534"/>
+  <rect x="525" y="285" width="105" height="125" rx="38" fill="#0c4a6e"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial" font-size="28" fill="#14532d">Juntos por uma comunidade mais forte</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#eff6ff"/>
+  <rect x="145" y="110" width="510" height="300" rx="24" fill="#ffffff" stroke="#166534" stroke-width="8"/>
+  <rect x="205" y="165" width="390" height="40" rx="10" fill="#dcfce7"/>
+  <rect x="205" y="235" width="290" height="26" rx="8" fill="#d1d5db"/>
+  <rect x="205" y="282" width="340" height="26" rx="8" fill="#d1d5db"/>
+  <rect x="205" y="329" width="250" height="26" rx="8" fill="#d1d5db"/>
+  <circle cx="602" cy="345" r="54" fill="#f59e0b"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial" font-size="30" fill="#14532d">Educação para Todos</text>
+</svg>
