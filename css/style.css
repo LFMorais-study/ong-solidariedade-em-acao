@@ -232,3 +232,82 @@ a {
         align-items: flex-start;
     }
 }
+
+html[data-contrast="high"] {
+    --color-primary: #facc15;
+    --color-primary-dark: #fde047;
+    --color-primary-light: #422006;
+
+    --color-secondary: #22d3ee;
+    --color-secondary-dark: #67e8f9;
+
+    --color-neutral-950: #ffffff;
+    --color-neutral-900: #ffffff;
+    --color-neutral-700: #f3f4f6;
+    --color-neutral-600: #e5e7eb;
+    --color-neutral-300: #9ca3af;
+    --color-neutral-200: #6b7280;
+    --color-neutral-100: #1f2937;
+    --color-neutral-50: #000000;
+    --color-white: #111827;
+}
+
+html[data-contrast="high"] body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+html[data-contrast="high"] .site-header {
+    background-color: #000000;
+    border-color: #facc15;
+}
+
+html[data-contrast="high"] .page-banner {
+    background: #000000;
+    color: #ffffff;
+    border-block: 2px solid #facc15;
+}
+
+html[data-contrast="high"] .page-banner p {
+    color: #ffffff;
+}
+
+html[data-contrast="high"] .page-section.alt,
+html[data-contrast="high"] .highlight-box,
+html[data-contrast="high"] .project-card,
+html[data-contrast="high"] .contact-card,
+html[data-contrast="high"] .volunteer-form,
+html[data-contrast="high"] .contact-form,
+html[data-contrast="high"] .donation-option {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+html[data-contrast="high"] .cta-section {
+    background-color: #facc15;
+    color: #111827;
+}
+
+html[data-contrast="high"] .cta-section p {
+    color: #111827;
+}
+
+html[data-contrast="high"] .btn-secondary {
+    color: #111827;
+}
+
+.contrast-toggle {
+    min-height: 44px;
+    padding: 0.6rem 1rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 0.5rem;
+    background: transparent;
+    color: var(--color-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contrast-toggle:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 3px;
+}
