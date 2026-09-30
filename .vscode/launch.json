@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Abrir ONG no Chrome",
+            "url": "http://localhost:8080/html/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

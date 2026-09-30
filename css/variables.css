@@ -1,0 +1,82 @@
+/* =========================================================
+   DESIGN SYSTEM - ONG ESPERANÇA
+   ========================================================= */
+
+:root {
+    /* Cores primárias */
+    --color-primary: #166534;
+    --color-primary-dark: #14532d;
+    --color-primary-light: #dcfce7;
+
+    /* Cores secundárias */
+    --color-secondary: #f59e0b;
+    --color-secondary-dark: #b45309;
+    --color-secondary-light: #fef3c7;
+
+    /* Cores neutras */
+    --color-neutral-950: #111827;
+    --color-neutral-900: #1f2937;
+    --color-neutral-700: #374151;
+    --color-neutral-600: #4b5563;
+    --color-neutral-300: #d1d5db;
+    --color-neutral-200: #e5e7eb;
+    --color-neutral-100: #f3f4f6;
+    --color-neutral-50: #f9fafb;
+    --color-white: #ffffff;
+
+    /* Feedback */
+    --color-success: #15803d;
+    --color-warning: #d97706;
+    --color-danger: #b91c1c;
+    --color-info: #0369a1;
+
+    /* Tipografia */
+    --font-family-base: Arial, Helvetica, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 2.5rem;
+    --font-size-4xl: 3rem;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-sm: 1.25;
+    --line-height-md: 1.5;
+    --line-height-lg: 1.75;
+
+    /* Espaçamentos - escala modular */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 6rem;
+
+    /* Bordas */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 1.5rem;
+    --border-color: var(--color-neutral-300);
+
+    /* Sombras */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.16);
+
+    /* Layout */
+    --container-max-width: 1200px;
+
+    /* Transições */
+    --transition-fast: 150ms ease-in-out;
+    --transition-normal: 300ms ease-in-out;
+}

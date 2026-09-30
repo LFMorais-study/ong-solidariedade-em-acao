@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#fff7ed"/>
+  <ellipse cx="400" cy="285" rx="230" ry="120" fill="#ffffff" stroke="#f59e0b" stroke-width="10"/>
+  <circle cx="320" cy="265" r="55" fill="#ef4444"/>
+  <circle cx="430" cy="240" r="55" fill="#22c55e"/>
+  <circle cx="510" cy="305" r="50" fill="#f59e0b"/>
+  <rect x="330" y="345" width="170" height="28" rx="14" fill="#166534"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Arial" font-size="30" fill="#92400e">Mesa Solidária</text>
+</svg>

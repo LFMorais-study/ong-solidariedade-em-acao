@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#f0fdf4"/>
+  <rect x="370" y="245" width="60" height="170" rx="18" fill="#92400e"/>
+  <circle cx="400" cy="185" r="120" fill="#22c55e"/>
+  <circle cx="315" cy="220" r="70" fill="#16a34a"/>
+  <circle cx="490" cy="220" r="70" fill="#15803d"/>
+  <path d="M140 420 Q400 320 660 420 Z" fill="#166534"/>
+  <text x="400" y="480" text-anchor="middle" font-family="Arial" font-size="30" fill="#14532d">Verde no Bairro</text>
+</svg>

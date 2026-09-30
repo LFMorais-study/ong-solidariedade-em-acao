@@ -1,0 +1,148 @@
+/* =========================================================
+   SISTEMA DE LAYOUT - CSS GRID DE 12 COLUNAS
+   ========================================================= */
+
+.container {
+    width: min(100% - 2rem, var(--container-max-width));
+    margin-inline: auto;
+}
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+.hero-content { grid-column: span 7; }
+.hero-image { grid-column: span 5; }
+
+.main-content { grid-column: span 8; }
+.sidebar { grid-column: span 4; }
+
+.card-item { grid-column: span 4; }
+
+.form-main { grid-column: span 8; }
+.form-aside { grid-column: span 4; }
+
+/* Breakpoint 1 - notebooks e desktops menores */
+@media (max-width: 1200px) {
+    .container {
+        width: min(100% - 2rem, 1100px);
+    }
+
+    .grid-12 {
+        gap: var(--space-4);
+    }
+}
+
+/* Breakpoint 2 - tablets em modo horizontal */
+@media (max-width: 992px) {
+    .container {
+        width: min(100% - 2rem, 900px);
+    }
+
+    .hero-content,
+    .hero-image {
+        grid-column: span 6;
+    }
+
+    .main-content {
+        grid-column: span 7;
+    }
+
+    .sidebar {
+        grid-column: span 5;
+    }
+
+    .card-item {
+        grid-column: span 6;
+    }
+
+    .form-main {
+        grid-column: span 7;
+    }
+
+    .form-aside {
+        grid-column: span 5;
+    }
+}
+
+/* Breakpoint 3 - tablets */
+@media (max-width: 768px) {
+    .container {
+        width: min(100% - 2rem, 720px);
+    }
+
+    .grid-12 {
+        gap: var(--space-4);
+    }
+
+    .hero-content,
+    .hero-image,
+    .main-content,
+    .sidebar,
+    .form-main,
+    .form-aside {
+        grid-column: 1 / -1;
+    }
+
+    .card-item {
+        grid-column: span 6;
+    }
+}
+
+/* Breakpoint 4 - smartphones */
+@media (max-width: 576px) {
+    .container {
+        width: min(100% - 1.5rem, 540px);
+    }
+
+    .grid-12 {
+        gap: var(--space-3);
+    }
+
+    .card-item,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Breakpoint 5 - smartphones pequenos */
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 1rem, 100%);
+    }
+
+    .grid-12 {
+        gap: var(--space-2);
+    }
+
+    .hero-content,
+    .hero-image,
+    .main-content,
+    .sidebar,
+    .card-item,
+    .form-main,
+    .form-aside {
+        grid-column: 1 / -1;
+    }
+}
