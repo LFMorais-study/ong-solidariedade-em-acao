@@ -26,6 +26,17 @@ projeto_ong_solidariedade_em_acao_interativa/
 `-- README.md
 ```
 
+
+## Estratégia de versionamento
+
+O projeto utiliza uma estratégia baseada em GitFlow:
+
+- `main`: versão estável e pronta para produção;
+- `develop`: integração das alterações em desenvolvimento;
+- `feature/*`: desenvolvimento isolado de novas funcionalidades.
+
+Os commits seguem o padrão Conventional Commits, utilizando prefixos como `feat`, `fix`, `docs`, `refactor` e `chore`.
+
 ## Navegacao SPA
 
 O documento principal e `html/index.html`. O arquivo `js/routes.js` implementa roteamento por hash, com rotas como:
